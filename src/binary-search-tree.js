@@ -1,55 +1,47 @@
 const { NotImplementedError } = require('../extensions/index.js');
 
-const { Node } = require('../extensions/list-tree.js');
+// const { Node } = require('../extensions/list-tree.js');
 
 /**
 * Implement simple binary search tree according to task description
 * using Node from extensions
 */
 class BinarySearchTree {
-  HEAD = null;
+
   root() {
-    return this.HEAD
+    throw new NotImplementedError('Not implemented');
+    // remove line with error and write your code here
   }
 
-  add(data) {
-    const node = this.root;
-    if (node === null) {
-      this.root = new Node(data);
-      return;
-    } else {
-      const searchTree = function(node) {
-        if (data < node.data) {
-          if (node.left === null) {
-            node.left = new Node(data);
-            return;
-          } else if (node.left !== null) {
-            return searchTree(node, left);
-          }
-        } else if (data > node.data) {
-          if (node.right === null) {
-            node.right = new Node(data);
-            return;
-          } else if (node.right !== null) {
-            return searchTree(node, right);
-          }
-        } else {
-          return null;
-        }
-      };
-      return searchTree(node)
-    }
+  add(/* data */) {
+    throw new NotImplementedError('Not implemented');
+    // remove line with error and write your code here
   }
 
-  has(data) {}
+  has(/* data */) {
+    throw new NotImplementedError('Not implemented');
+    // remove line with error and write your code here
+  }
 
-  find(data) {}
+  find(/* data */) {
+    throw new NotImplementedError('Not implemented');
+    // remove line with error and write your code here
+  }
 
-  remove(data) {}
+  remove(/* data */) {
+    throw new NotImplementedError('Not implemented');
+    // remove line with error and write your code here
+  }
 
-  min() {}
+  min() {
+    throw new NotImplementedError('Not implemented');
+    // remove line with error and write your code here
+  }
 
-  max() {}
+  max() {
+    throw new NotImplementedError('Not implemented');
+    // remove line with error and write your code here
+  }
 }
 
 module.exports = {
